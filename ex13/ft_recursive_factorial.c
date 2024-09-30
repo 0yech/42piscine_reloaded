@@ -6,7 +6,7 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 01:58:32 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/19 02:02:38 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/29 19:39:05 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	ft_recursive_factorial(int nb)
 {
 	if (nb < 0)
 		return (0);
-	if (nb == 1 || nb == 0)	
+	if (nb == 1 || nb == 0)
 		return (1);
 	return (nb * ft_recursive_factorial(nb - 1));
 }

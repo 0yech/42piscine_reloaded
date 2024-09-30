@@ -6,7 +6,7 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 03:39:41 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/25 04:08:36 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/29 20:40:19 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ int	errorcheck(int argc)
 
 int	main(int argc, char *argv[])
 {
-	int	file;
-	int error_code;
+	int		file;
+	int		error_code;
 	char	buf[1024];
 	ssize_t	count;
 
@@ -53,8 +53,12 @@ int	main(int argc, char *argv[])
 		prt_error(3);
 		return (3);
 	}
-	while ((count = read(file, buf, sizeof(buf))) > 0)
+	count = read(file, buf, sizeof(buf));
+	while (count > 0)
+	{
 		write(1, buf, count);
+		count = read(file, buf, sizeof(buf));
+	}
 	close(file);
 	return (0);
 }

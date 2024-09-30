@@ -6,17 +6,17 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 01:38:31 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/19 01:57:38 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/29 19:38:40 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_iterative_factiorial(int nb)
 {
-	int i;
-	int f;
+	int	i;
+	int	f;
 
-	f = 1
-	i = nb
+	f = 1;
+	i = nb;
 	if (nb < 0)
 		return (0);
 	if (nb == 0)

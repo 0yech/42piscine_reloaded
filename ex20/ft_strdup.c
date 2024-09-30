@@ -6,7 +6,7 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 04:20:10 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/20 04:28:51 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/29 19:42:43 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -24,8 +24,8 @@ int	ft_strlen(char *str)
 
 char	*ft_strdup(char *src)
 {
-	int i;
-	char *dupe;
+	int		i;
+	char	*dupe;
 
 	if (src == NULL)
 		return (NULL);

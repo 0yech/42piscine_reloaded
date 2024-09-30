@@ -6,7 +6,7 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 23:29:15 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/18 23:32:20 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/29 19:33:32 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 void	ft_print_alphabet(void)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
+	int	a;
+
+	a = 96;
+	while (a++ < 122)
+		ft_putchar(a);
 }

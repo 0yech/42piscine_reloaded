@@ -6,13 +6,13 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 03:40:45 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/20 04:19:13 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/29 19:42:13 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putstr(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -25,7 +25,7 @@ void	ft_putstr(char *str)
 
 void	ft_swap(char **a, char **b)
 {
-	char *x;
+	char	*x;
 
 	x = *a;
 	*a = *b;
@@ -34,7 +34,7 @@ void	ft_swap(char **a, char **b)
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s1[i] || s2[i])
@@ -48,8 +48,8 @@ int	ft_strcmp(char *s1, char *s2)
 
 int	main(int argc, char *argv[])
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 1;
 	if (argc < 2)

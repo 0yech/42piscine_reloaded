@@ -6,14 +6,14 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 01:06:34 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/25 01:45:09 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/29 21:05:33 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int (*f)(char*));
+int	ft_count_if(char **tab, int (*f)(char*))
 {
-	int i;
-	int count;
+	int	i;
+	int	count;
 
 	i = 0;
 	count = 0;

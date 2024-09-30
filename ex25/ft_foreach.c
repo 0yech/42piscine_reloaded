@@ -6,13 +6,13 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 23:47:47 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/25 00:15:59 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/29 19:46:09 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < length)
