@@ -3,7 +3,7 @@ NAME:= ft_display_file
 CFLAGS:= -Wall -Wextra -Werror
 IDIR:=include/
 SRCDIR:=src/
-CFILES:=$(SDIR)display_file.c
+CFILES:=$(SRCDIR)display_file.c
 OFILES:=$(CFILES:.c=.o)
 
 all: $(NAME)
