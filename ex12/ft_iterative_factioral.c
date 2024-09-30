@@ -6,11 +6,11 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 01:38:31 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/29 19:38:40 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/30 15:31:17 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factiorial(int nb)
+int	ft_iterative_factorial(int nb)
 {
 	int	i;
 	int	f;

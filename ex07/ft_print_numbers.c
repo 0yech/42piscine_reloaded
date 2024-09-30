@@ -6,11 +6,11 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 00:50:49 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/29 19:35:40 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/30 15:28:50 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {

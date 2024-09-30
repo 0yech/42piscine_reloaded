@@ -1,1 +1,1 @@
-ifconfig | awk '/ether/ {print $2}'
+ifconfig | grep "ether " | sed 's/ether//' | tr -d ' \t'
