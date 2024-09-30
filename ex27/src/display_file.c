@@ -6,7 +6,7 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 03:39:41 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/30 16:21:36 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/30 16:51:12 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	prt_error(int error)
 	else if (error == 2)
 		write(2, "Too many arguments.\n", 20);
 	else if (error == 3)
-		write(2, "Cannot read file.\n", 19);
+		write(2, "Cannot read file.\n", 18);
 }
 
 int	errorcheck(int argc)
@@ -37,7 +37,7 @@ int	errorcheck(int argc)
 	return (0);
 }
 
-int	checkread(ssize_t count)
+int	checkread(int count)
 {
 	if (count == -1)
 	{
@@ -52,7 +52,7 @@ int	main(int argc, char *argv[])
 	int		file;
 	int		error_code;
 	char	buf[1024];
-	ssize_t	count;
+	int		count;
 
 	error_code = errorcheck(argc);
 	if (error_code != 0)
