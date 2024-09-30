@@ -6,7 +6,7 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 03:39:41 by nrey              #+#    #+#             */
-/*   Updated: 2024/09/29 20:40:19 by nrey             ###   ########.fr       */
+/*   Updated: 2024/09/30 16:21:36 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,16 @@ int	errorcheck(int argc)
 	return (0);
 }
 
+int	checkread(ssize_t count)
+{
+	if (count == -1)
+	{
+		prt_error(3);
+		return (3);
+	}
+	return (0);
+}
+
 int	main(int argc, char *argv[])
 {
 	int		file;
@@ -54,6 +64,8 @@ int	main(int argc, char *argv[])
 		return (3);
 	}
 	count = read(file, buf, sizeof(buf));
+	if (checkread(count) != 0)
+		return (3);
 	while (count > 0)
 	{
 		write(1, buf, count);
